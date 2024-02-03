@@ -5,14 +5,14 @@ import { toPng } from 'html-to-image';
 
 function App() {
   const elementRef = useRef(null);
-  console.log('elementRef', elementRef)
+  // console.log('elementRef', elementRef)
 
   const [name, setName] = useState("")
   const [message, setMessage] = useState('');
   const [showQr, setShowQr] = useState(false)
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log(name, message)
+    // console.log(name, message)
     if (name && message) {
       setShowQr(true)
     }
